@@ -12,7 +12,7 @@ const maxOfTwoNumbers = (x, y) => {
   if (x >= y) {
     return x
   } else {
-    return
+    return y
   }
 }
 
@@ -75,7 +75,7 @@ Complete the exercise in the space below:
 */
 
 const generateEmail = (name, domain) => {
-  return ` ${name}@${domain}`
+  return `${name}@${domain}`
 }
 
 console.log('Exercise 4 Result:', generateEmail('johnsmith', 'example.com'))
@@ -148,9 +148,9 @@ Complete the exercise in the space below:
 */
 const convertTemperature = (temperature, scale) => {
   if (scale === 'C') {
-    return temperature
+    return (temperature * 9) / 5 + 32
   } else if (scale === 'F') {
-    return temperature
+    return (temperature - 32 * 5) / 9
   }
 }
 
